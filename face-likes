@@ -1,0 +1,59 @@
+#!/bin/bash
+
+
+
+#EQUIPE1=`curl | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+EQUIPE2=`curl https://www.facebook.com/Equipe02VL/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tr '"' '\n' | tail -n 2 | head -n 1 | cut -d ' ' -f 6 `
+#EQUIPE3=`curl  | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+EQUIPE4=`curl https://www.facebook.com/equipesalmao/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 13 `
+#EQUIPE5=`curl  | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+#EQUIPE6=`curl https://www.facebook.com/Equipe-7-Preta-UP-183096588885557/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+EQUIPE7=`curl https://www.facebook.com/Equipe-7-Preta-UP-183096588885557/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+EQUIPE8=`curl https://www.facebook.com/equipe.marrom2017/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+EQUIPE9=`curl https://www.facebook.com/panteraslilas09/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+EQUIPE10=`curl https://www.facebook.com/Equipe-10-Laranja-UP-693221944215772/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 6 `
+EQUIPE11=`curl https://www.facebook.com/teamvermelhorubi/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+EQUIPE12=`curl https://www.facebook.com/UPTeam12/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 10 `
+EQUIPE13=`curl https://www.facebook.com/Equipe-Bordo_13-up-2017-1846201709033629/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+EQUIPE14=`curl https://www.facebook.com/equipebege/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+#EQUIPE15=`curl https://www.facebook.com/search/top/?q=Equipe%2011%20rubi| | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+#EQUIPE16=`curl https://www.facebook.com/search/top/?q=Equipe%2011%20rubi| |  tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+EQUIPE17=`curl https://www.facebook.com/Equipe-17-Azul-Marinho-UP-1703686432994051/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 7 `
+EQUIPE18=`curl https://www.facebook.com/equipe18up2017/  | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 6 `
+EQUIPE19=`curl https://www.facebook.com/grupoamarelomostarda/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 8 `
+EQUIPE20=`curl https://www.facebook.com/equipe20amarelo/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+EQUIPE21=`curl https://www.facebook.com/cruamarfin21/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 7 `
+EQUIPE22=`curl https://www.facebook.com/equiperosapinkUP/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 6 `
+EQUIPE23=`curl https://www.facebook.com/equipegoiaba23/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+EQUIPE24=`curl https://www.facebook.com/equipe24CinzaChumbo/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+EQUIPE25=`curl https://www.facebook.com/equipe25UP/ | tr  '<' '\n' | grep curtidas | tr '=' '\n' | head -n 3 | tail -n 1 | cut -d ' ' -f 5 `
+
+
+
+echo "$EQUIPE1 - Equipe Vermelho" > rankface.txt
+echo "$EQUIPE2 - Equipe Verde Lima ">> rankface.txt
+echo "$EQUIPE3 - Equipe Verde Bandeira">> rankface.txt
+echo "$EQUIPE4 - Equipe Salmão">> rankface.txt
+echo "$EQUIPE5 - Equipe Roxo">> rankface.txt
+echo "$EQUIPE6 - Equipe Rosa Bebê">> rankface.txt
+echo "$EQUIPE7 - Equipe Preta">> rankface.txt
+echo "$EQUIPE8 - Equipe Marrom">> rankface.txt
+echo "$EQUIPE9 - Equipe Lilás (roxo claro)">> rankface.txt
+echo "$EQUIPE10 - Equipe Laranja">> rankface.txt
+echo "$EQUIPE11 - Equipe Rubi">> rankface.txt
+echo "$EQUIPE12 - Equipe Cinza mescla">> rankface.txt
+echo "$EQUIPE13 - Equipe Bordô">> rankface.txt
+echo "$EQUIPE14 - Equipe Bege">> rankface.txt
+echo "$EQUIPE15 - Equipe Azul Turquesa">> rankface.txt
+echo "$EQUIPE16 - Equipe Verde Musgo">> rankface.txt
+echo "$EQUIPE17 - Equipe Azul Marinho">> rankface.txt
+echo "$EQUIPE18 - Equipe Amarelo Ouro ">> rankface.txt
+echo "$EQUIPE19 - Equipe Amarelo Mostarda">> rankface.txt
+echo "$EQUIPE20 - Equipe Amarelo">> rankface.txt
+echo "$EQUIPE21 - Equipe Crua (Marfin)">> rankface.txt
+echo "$EQUIPE22 - Equipe Rosa Pink">> rankface.txt
+echo "$EQUIPE23 - Equipe Goiaba">> rankface.txt
+echo "$EQUIPE24 - Equipe Cinza Chumbo">> rankface.txt
+echo "$EQUIPE25 - Equipe Branca">> rankface.txt
+
+sort rankface.txt > $(date +%H:h-%d-%m).rankface.txt
